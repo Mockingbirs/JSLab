@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var num1 = 7;
+        var num2 = 3;
+        var res;
+
+        res=(num1<10)&&(num2<10);
+        document.write("num1<10&&num2<10 :");
+        document.write(res);
+
+        res=(num1>10)&&(num2<10);
+        document.write("<br>num1>10&&num2<10 :");
+        document.write(res);
+
+        res=(num1>10)||(num2>10);
+        document.write("<br>num1<10||num2<10 :");
+        document.write(res);
+
+        res=(num1>10)||(num2<10);
+        document.write("<br>num1<10||num2<10 :");
+        document.write(res);
+
+        res= !(num1==num2);
+        document.write("<br>!(num1==num2) :"); //not(false)이므로 결과가 true가 된다.
+        //이식에서 괄호 안에 비교 연산식을 기술 하였기 때문에
+        //(num==num2)가 먼저 실행되어 flase가 산출되고 
+        //그 false에 대해 !즉 not이 적용되어 true라는 결과가 출력된다.
+        document.write(res);
+    </script>
+</body>
+</html>

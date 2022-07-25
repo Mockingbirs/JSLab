@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var jumsu = prompt("점수를 입력하세요");
+
+        switch ((jumsu-(jumsu%10))/10) {
+            case 6:
+                document.write("D학점입니다.")
+                break;
+
+            case 7:
+                document.write("C학점입니다.")
+                break;
+
+            case 8:
+                document.write("B학점입니다.")
+                break;
+
+            case 10:
+            case 9:
+                document.write("A학점입니다.")
+                break;
+
+
+            default:
+                document.write("F학점입니다.")
+        }
+
+    </script>
+</body>
+
+</html>
